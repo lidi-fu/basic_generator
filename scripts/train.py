@@ -72,6 +72,7 @@ scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
 # Training loop
 num_epochs = 100  # Increase number of epochs
 
+
 for epoch in range(num_epochs):
     generator.train()  # Set model to training mode
     for batch_idx, (data, _) in enumerate(train_loader):
